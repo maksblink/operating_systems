@@ -92,5 +92,10 @@ This implementation guarantees deadlock-free operation through:
 
 ### Compilation
 ```bash
-g++ -std=c++11 -o philosophers philosophers.cpp
+g++ -std=c++11 -o main main.cpp
+```
 
+### 
+```Start
+./main
+```
