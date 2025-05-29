@@ -1,86 +1,65 @@
-Oto plik README.md w formacie Markdown:
+# 🚀 Multithreaded Chat Server in Python
 
-
-# 🚀 Wielowątkowy Serwer Czatu w Pythonie
-
-![Python](https://img.shields.io/badge/Python-3.6%2B-blue)
-![Socket](https://img.shields.io/badge/Socket-Networking-orange)
+![Python](https://img.shields.io/badge/Python-3.6%2B-blue)  
+![Socket](https://img.shields.io/badge/Socket-Networking-orange)  
 ![Threading](https://img.shields.io/badge/Threading-Multithreaded-brightgreen)
 
-## 📋 Opis projektu
+## 📋 Project Description
 
-Projekt implementuje wielowątkowy serwer czatu z wykorzystaniem:
-- `socket` do komunikacji sieciowej
-- `threading` do obsługi wielu klientów jednocześnie
+This project implements a multithreaded chat server using:
+- `socket` for network communication
+- `threading` to handle multiple clients simultaneously
 
-## 🌟 Funkcjonalności
+## 🌟 Features
 
-### Serwer
-- 🧵 Tworzy osobny wątek dla każdego klienta
-- 🔒 Synchronizacja wiadomości między klientami
-- 📢 Rozsyłanie wiadomości do wszystkich uczestników
-- 🏷️ Zarządzanie nickami użytkowników
-- ♻️ Obsługa rozłączeń klientów
+### Server
+- 🧵 Creates a separate thread for each client
+- 🔒 Synchronizes messages between clients
+- 📢 Broadcasts messages to all participants
+- 🏷️ Manages user nicknames
+- ♻️ Handles client disconnections
 
-### Klient
-- ✍️ Wysyłanie wiadomości
-- 👀 Wyświetlanie wiadomości od innych
-- 🚪 Możliwość opuszczenia czatu (`exit`)
+### Client
+- ✍️ Sends messages
+- 👀 Displays messages from others
+- 🚪 Allows leaving the chat using `exit`
 
-## 🛠️ Wymagania
-
+## 🛠️ Requirements
 - Python 3.6+
-- Terminal/system operacyjny obsługujący wielowątkowość
+- Terminal/OS that supports multithreading
 
-## 🚀 Uruchomienie
+## 🚀 Running the Project
 
-1. **Serwer**:
+1. **Server**:
 ```bash
-python server.py
+python ChatServer.py
 ```
 
-2. **Klient** (w osobnym terminalu):
+2. **Client** (in a separate terminal):
 ```bash
-python client.py
+python ChatClient.py
 ```
 
-## 🖥️ Przykładowa sesja
+## 🖥️ Sample Session
 
 ```
 $ python client.py
-Wybierz swój nickname: Alice
-Połączono z serwerem!
-Bob dołączył do czatu!
-Bob: Cześć wszystkim!
-Alice: Witaj Bob!
+Choose your nickname: Alice
+Connected to the server!
+Bob has joined the chat!
+Bob: Hi everyone!
+Alice: Hi Bob!
 ```
 
-## 📁 Struktura projektu
+## 📁 Project Structure
 
 ```
-chat-server/
-├── server.py        # Implementacja serwera
-├── client.py        # Implementacja klienta
-└── README.md        # Dokumentacja
+project2/
+├── Chatclient.py   # Client implementation
+├── Chatserver.py   # Server implementation
+└── README.md       # Documentation
 ```
 
-## 📜 Licencja
+## 📜 License
 
 MIT License - [LICENSE](LICENSE)
-
----
-
-<div align="center">
-  <p>🎉 <em>Prosty czat wielowątkowy w Pythonie</em> 🎉</p>
-</div>
-```
-
-Ten plik zawiera:
-- Nagłówek z emoji i badge'ami
-- Sekcje z opisem projektu i funkcjonalności
-- Instrukcję uruchomienia
-- Przykładową sesję
-- Strukturę projektu
-- Informację o licencji
-
-Format jest przyjazny dla GitHub/GitLab i innych platform obsługujących Markdown. Możesz go łatwo zmodyfikować dodając np. sekcję "Autorzy" lub "Wkład w projekt".
