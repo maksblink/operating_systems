@@ -1,0 +1,78 @@
+# ==== C/C++ ====
+
+# Pliki wykonywalne
+*.exe
+*.out
+*.obj
+*.o
+
+# Pliki kompilatora
+*.log
+*.dll
+*.lib
+*.pdb
+
+# Visual Studio
+.vscode/
+*.sdf
+*.opensdf
+*.vcxproj*
+*.user
+*.ipch
+Debug/
+Release/
+x64/
+*.tlog/
+*.idb
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+build/
+
+# Inne IDE
+*.idea/
+*.code-workspace
+
+# ==== Python ====
+
+# Środowisko wirtualne
+venv/
+ENV/
+env/
+.venv/
+
+# Pliki cache i kompilowane
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Notatniki Jupyter
+.ipynb_checkpoints/
+
+# Pliki logów, baz danych, itp.
+*.log
+*.sqlite3
+*.db
+
+# Pliki konfiguracyjne narzędzi
+*.env
+*.DS_Store
+*.coverage
+.coverage.*
+.cache/
+.mypy_cache/
+.pytest_cache/
+.tox/
+.pyre/
+hypothesis/
+
+# PDM / Poetry / pipenv
+pipfile.lock
+poetry.lock
+
+# MacOS
+.DS_Store
